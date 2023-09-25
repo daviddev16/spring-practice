@@ -1,11 +1,13 @@
 package com.daviddev16.general.model;
 
 import com.daviddev16.general.payload.UserCreateRequest;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.beans.BeanUtils;
 
 import java.time.LocalDateTime;
+import java.util.HashSet;
 import java.util.Set;
 
 @Builder
@@ -81,7 +83,7 @@ public class User {
 
     /* Organization.owner */
     @OneToMany(mappedBy = "owner")
-    private Set<Organization> organizations;
+    private Set<Organization> organizations = new HashSet<>();
 
     @ManyToMany
     @JoinTable(
@@ -100,10 +102,12 @@ public class User {
             )
     )
     /* users <--> users_roles <--> roles */
-    private Set<Role> roles;
+    private Set<Role> roles = new HashSet<>();
 
-    public User(UserCreateRequest createRequest) {
-        BeanUtils.copyProperties(createRequest, this);
+    public static User of(UserCreateRequest createRequest) {
+        User userFromRequest = new User();
+        BeanUtils.copyProperties(createRequest, userFromRequest);
+        return userFromRequest;
     }
 
 }
