@@ -1,16 +1,7 @@
-package com.daviddev16.general.view;
+package com.daviddev16.organization.response;
 
-import com.daviddev16.general.model.Organization;
-import com.daviddev16.general.model.Role;
-import com.daviddev16.general.model.User;
-import jakarta.persistence.*;
+import com.daviddev16.organization.model.Organization;
 import lombok.*;
-import org.aspectj.weaver.ast.Or;
-import org.springframework.beans.BeanUtils;
-
-import java.time.LocalDateTime;
-import java.util.Optional;
-import java.util.Set;
 
 @Builder
 @Getter

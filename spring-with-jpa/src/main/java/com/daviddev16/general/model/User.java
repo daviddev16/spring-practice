@@ -1,7 +1,7 @@
 package com.daviddev16.general.model;
 
 import com.daviddev16.general.payload.UserCreateRequest;
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.daviddev16.organization.model.Organization;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.beans.BeanUtils;

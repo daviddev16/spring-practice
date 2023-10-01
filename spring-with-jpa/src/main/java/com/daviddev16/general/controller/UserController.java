@@ -3,7 +3,7 @@ package com.daviddev16.general.controller;
 import com.daviddev16.general.model.User;
 import com.daviddev16.general.payload.UserCreateRequest;
 import com.daviddev16.general.service.UserService;
-import com.daviddev16.general.view.UserGenericResponse;
+import com.daviddev16.general.response.UserGenericResponse;
 import jakarta.validation.constraints.Email;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -12,7 +12,6 @@ import java.util.Set;
 @NoArgsConstructor
 public class UserCreateRequest {
 
-    private Long id;
     private String email;
     private String firstName;
     private String lastName;

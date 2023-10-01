@@ -1,8 +1,7 @@
-package com.daviddev16.general.view;
+package com.daviddev16.general.response;
 
-import com.daviddev16.general.model.Organization;
+import com.daviddev16.organization.model.Organization;
 import com.daviddev16.general.model.Role;
-import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

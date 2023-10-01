@@ -1,11 +1,11 @@
-package com.daviddev16.general.service.impl;
+package com.daviddev16.organization.service.impl;
 
 import com.daviddev16.exception.base.GenericNotFoundException;
-import com.daviddev16.general.model.Organization;
+import com.daviddev16.organization.model.Organization;
 import com.daviddev16.general.model.User;
-import com.daviddev16.general.payload.OrganizationCreateRequest;
-import com.daviddev16.general.repository.OrganizationRepository;
-import com.daviddev16.general.service.OrganizationService;
+import com.daviddev16.organization.payload.OrganizationCreateRequest;
+import com.daviddev16.organization.repository.OrganizationRepository;
+import com.daviddev16.organization.service.OrganizationService;
 import com.daviddev16.general.service.UserService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;

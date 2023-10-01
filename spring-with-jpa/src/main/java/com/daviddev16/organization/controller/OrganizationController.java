@@ -1,10 +1,9 @@
-package com.daviddev16.general.controller;
+package com.daviddev16.organization.controller;
 
-import com.daviddev16.general.model.Organization;
-import com.daviddev16.general.payload.OrganizationCreateRequest;
-import com.daviddev16.general.service.OrganizationService;
-import com.daviddev16.general.view.OrganizationGenericResponse;
-import org.aspectj.weaver.ast.Or;
+import com.daviddev16.organization.model.Organization;
+import com.daviddev16.organization.payload.OrganizationCreateRequest;
+import com.daviddev16.organization.service.OrganizationService;
+import com.daviddev16.organization.response.OrganizationGenericResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

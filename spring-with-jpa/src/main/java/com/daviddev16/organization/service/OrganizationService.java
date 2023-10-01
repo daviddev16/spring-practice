@@ -1,7 +1,7 @@
-package com.daviddev16.general.service;
+package com.daviddev16.organization.service;
 
-import com.daviddev16.general.model.Organization;
-import com.daviddev16.general.payload.OrganizationCreateRequest;
+import com.daviddev16.organization.model.Organization;
+import com.daviddev16.organization.payload.OrganizationCreateRequest;
 
 import java.util.List;
 import java.util.Optional;

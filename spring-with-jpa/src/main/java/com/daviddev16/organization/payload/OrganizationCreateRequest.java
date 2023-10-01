@@ -1,4 +1,4 @@
-package com.daviddev16.general.payload;
+package com.daviddev16.organization.payload;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

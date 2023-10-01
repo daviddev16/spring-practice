@@ -1,5 +1,6 @@
-package com.daviddev16.general.model;
+package com.daviddev16.organization.model;
 
+import com.daviddev16.general.model.User;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
